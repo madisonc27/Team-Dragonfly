@@ -4531,11 +4531,8 @@ rating,region_africa_arabia,region_caribbean,region_central_america,region_hawai
 78.0,0,0,1,0,0,0,0,0,0,0,0,0,0,Very Dark,6.0,7.0,6.0,November,1998,region_central_america
 85.0,0,0,1,0,0,0,0,0,0,0,0,0,0,Medium-Dark,7.0,6.0,7.0,October,1998,region_central_america
 85.0,0,0,1,0,0,0,0,0,0,0,0,0,0,Medium-Dark,8.0,6.0,7.0,October,1998,region_central_america
-,0,0,0,0,0,0,0,0,0,0,0,0,0,Medium-Dark,7.0,5.0,7.0,October,1998,region_africa_arabia
-,0,0,0,0,0,1,0,0,0,0,0,0,1,Medium-Dark,6.0,6.0,5.0,October,1998,region_africa_arabia
 89.0,0,0,1,0,0,0,0,0,0,0,0,0,0,Medium-Dark,7.0,5.0,8.0,October,1998,region_central_america
 86.0,0,0,0,0,0,0,0,0,0,0,0,0,0,Dark,7.0,6.0,7.0,October,1998,region_africa_arabia
-,0,0,0,0,0,0,0,0,0,0,0,0,0,Dark,6.0,7.0,6.0,October,1998,region_africa_arabia
 84.0,0,0,1,0,0,0,0,0,0,0,0,0,0,Medium-Dark,7.0,5.0,7.0,October,1998,region_central_america
 84.0,1,0,0,0,0,0,0,0,0,0,0,0,0,Medium-Dark,6.0,7.0,7.0,October,1998,region_africa_arabia
 87.0,0,0,0,0,0,0,0,0,0,1,0,0,0,Dark,8.0,6.0,8.0,September,1998,region_africa_arabia
