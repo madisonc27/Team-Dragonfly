@@ -1,41 +1,37 @@
-# coffee-quality-database
-Digitizing 1,340 coffee reviews
+# Team Dragonfly:  Title
+Include a brief summary of the project and our goals.
+Include links to slides and recorded presentation
 
-# Data
-These data contain reviews of 1312 arabica and 28 robusta coffee beans from the Coffee Quality Institute's trained reviewers. The features include:
+## Team Members
+Links to our Linkedins if we would like
 
-## Quality Measures
-* Aroma
-* Flavor
-* Aftertaste
-* Acidity
-* Body
-* Balance
-* Uniformity
-* Cup Cleanliness
-* Sweetness
-* Moisture
-* Defects
+## Table of Contents
+Include links to each header below
 
-## Bean Metadata
-* Processing Method
-* Color
-* Species (arabica / robusta)
+# Trial 1: Categorize country of origin using professional coffee quality ratings
+Brief description of data set and goals
 
-## Farm Metadata
-*  Owner
-* Country of Origin
-* Farm Name
-* Lot Number
-* Mill
-* Company
-* Altitude
-* Region
+## Data Cleaning and Exploratory Analysis
+Describe how we treated the data and include some graphics with important information about the relationship between variables
 
-The [data](https://github.com/jldbc/coffee-quality-database/tree/master/data) folder contains both raw and cleaned data. The raw data is exactly as it was found on the CQI site. Since these human-recorded data use a variety of different encodings, abbreviations, and units of measurement for their farm names, altitude, region, and other fields, I recommend using the cleaned data as a starting point.
+## Model Creation and Conclusions
+Mention each model and note that we were not able to obtain high accuracy. Note the problems with the data and that we decided to shift focus.
 
-The site was scraped using a Selenium headless browser and Beautiful Soup. To replicate this or collect updated data, create a login for the CQI site and enter your credentials in the [scraper](https://github.com/jldbc/coffee-quality-database/tree/master/scraper) 
+# Trial 2: Predict rating from Coffee Review using various features
+Brief description of data set and goals
 
-# Source
+## Data Cleaning and Exploratory Analysis
+Describe how we treated the data and include important graphics
 
-These data were collected from the Coffee Quality Institute's [review pages](https://database.coffeeinstitute.org/) in January 2018. 
+## Model Creation and Results
+
+### Multiple Linear Regression
+
+### Lasso and Ridge Regression
+Include rationale for using lasso and ridge - they both work well for smaller data sets
+
+### Interaction Terms
+
+### Conclusions
+
+# Future Directions
