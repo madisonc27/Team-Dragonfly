@@ -1,5 +1,5 @@
 # Team Dragonfly:  Coffee Ratings
-Coffee is consumed daily by 30-40% of the world's population, and produced in over 70 countries worldwide. Though coffee drinkers all have their preferences, we wanted to see if we could find relationships between how a coffee rates in taste tests and its features, such as country or region of origin, roast, or type of preparation method.
+Coffee is consumed daily by 30-40% of the world's population, and produced in over 70 countries worldwide. Though coffee drinkers have their own individual preferences, we wanted to see if we could find relationships between how a coffee rates in taste tests and its features, such as country or region of origin, roast, or type of preparation method.
 
 This project was completed as part of The Erdős Institute's [data science bootcamp](https://www.erdosinstitute.org/code).
 
@@ -11,7 +11,7 @@ This project was completed as part of The Erdős Institute's [data science bootc
 * [Ethan Semrad](https://math.fsu.edu/People/grads.php?id=1823) has a master's in Mathematics from University of South Dakota, and is currently pursuing a PhD in Biomathematics at Florida State University. He takes his coffee black.
 
 ## Table of Contents
-* [Trial 1: Categorize country of origin using professional coffee quality ratings](https://github.com/madisonc27/Team-Dragonfly#trial-1-categorize-country-of-origin-using-professional-coffee-quality-ratings))
+* [Trial 1: Categorize country of origin using professional coffee quality ratings](https://github.com/madisonc27/Team-Dragonfly#trial-1-categorize-country-of-origin-using-professional-coffee-quality-ratings)
   * [Data Cleaning and Exploratory Analysis](https://github.com/madisonc27/Team-Dragonfly#data-cleaning-and-exploratory-analysis)
   * [Model Creation and Conclusions](https://github.com/madisonc27/Team-Dragonfly#model-creation-and-conclusions)
 * [Trial 2: Predict rating from Coffee Review using various features](https://github.com/madisonc27/Team-Dragonfly#trial-2-predict-rating-from-coffee-review-using-various-features)
@@ -86,7 +86,7 @@ A final thing to consider is the difference in counts between each class in the 
 Next we began to create our models. Because each of our features is categorical and binary, we decided to use multiple linear regression to establish an initial simple model. We are not able to use a polynomial model because our predictors consist entirely of 0s and 1s. Importantly, we also created a baseline model that simply took the mean rating from the training set and predicted this mean regardless of the features.
 
 ### Multiple Linear Regression
-Details on the multiple linear regression model can be found [here](Trial%202/Models/Multiple%20Linear%20Regression.ipynb). In cross validation, this model performed better than the baseline when using both mean squared error (MSE) and mean absolute error (MAE). Results for all models can be found in the [Conclusions](https://github.com/madisonc27/Team-Dragonfly/edit/main/README.md#conclusions) section.
+Details on the multiple linear regression model can be found [here](Trial%202/Models/Multiple%20Linear%20Regression.ipynb). In cross validation, this model performed better than the baseline when using both mean squared error (MSE) and mean absolute error (MAE). Results for all models can be found in the [Conclusions](https://github.com/madisonc27/Team-Dragonfly#conclusions) section.
 
 ### Lasso and Ridge Regression
 After performing multiple linear regression, we decided to extend the model with both lasso and ridge regression. These models allow us to impose a penalty on the coefficients, which helps to elucidate which features are most important for the model. In theory, smaller coefficients chosen through optimization of the hyperparameter alpha should also help us avoid overfitting to the training data. Details for the lasso and ridge models can be found [here](Trial%202/Models/Lasso%20Ridge%20v1). 
@@ -96,7 +96,7 @@ Lasso regression in particular can be very helpful for feature selection, since 
 ![Alpha table](Trial%202/Models/lasso_alphas.png)
 
 ### Interaction Terms
-We decided to include some interaction terms in our model to see if the predictions could be improved. Coefficients with a stronger main effect are more likely to have interactions. From our previous regression coefficients, we determined that roast was particularly important, as were espresso and pod/capsule. We decided to try including interaction terms between espresso and each roast as well as between pod/capsule and each roast. More details on the interaction terms can be found [here](Trial%202/Models/Interaction%20Terms.ipynb) and the results can be seen in the [Conclusions](https://github.com/madisonc27/Team-Dragonfly/edit/main/README.md#conclusions).
+We decided to include some interaction terms in our model to see if the predictions could be improved. Coefficients with a stronger main effect are more likely to have interactions. From our previous regression coefficients, we determined that roast was particularly important, as were espresso and pod/capsule. We decided to try including interaction terms between espresso and each roast as well as between pod/capsule and each roast. More details on the interaction terms can be found [here](Trial%202/Models/Interaction%20Terms.ipynb) and the results can be seen in the [Conclusions](https://github.com/madisonc27/Team-Dragonfly#conclusions).
 
 It is important to note that many other interaction terms could have been chosen. For example, some of the regions, such as Africa/Arabia seemed to be quite important. However, adding in interaction terms greatly increases the number of features in the model. We saw only modest gains in model performance when adding the 12 roast with espresso and pod/capsule interaction terms, corresponding to a drop in the MSE of approximately 0.13 and in the MAE of approximately 0.05. Therefore, we decided not to continue adding more interaction terms.
 
