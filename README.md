@@ -68,7 +68,7 @@ In the end, our features included:
 
 Of these, region consisted of 6 different regions, roast included 6 different roasts, the remaining categories were binary for the presence or absence of that feature, and the rating was a score from 0-100.
 
-Looking more closely at these features, we can first investigate the ratings, and their distribution is shown below. The ratings are slightly skewed, with a skew value of -1.80. *We may want to discuss kurtosis here as well if we have the value
+Now we can look more closely at these features, the details of which can be found in the [EDA Folder](Trial%202/EDA/EDA/ipynb). First we investigate the ratings, and their distribution is shown below. The ratings are slightly skewed, with a skew value of -1.80. 
 
 ![Ratings](Trial%202/EDA/rating_skew.png)
 
