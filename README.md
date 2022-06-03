@@ -20,7 +20,7 @@ This project was completed as part of The Erdős Institute's [data science bootc
     * [Multiple Linear Regression](https://github.com/madisonc27/Team-Dragonfly#multiple-linear-regression)
     * [Lasso and Ridge Regression](https://github.com/madisonc27/Team-Dragonfly#lasso-and-ridge-regression)
     * [Interaction Terms](https://github.com/madisonc27/Team-Dragonfly#interaction-terms)
-    * [Conclusions](https://github.com/madisonc27/Team-Dragonfly#conclusions)
+    * [Results](https://github.com/madisonc27/Team-Dragonfly#results)
 * [Key Takeaways](https://github.com/madisonc27/Team-Dragonfly#key-takeaways)
 * [Future Directions](https://github.com/madisonc27/Team-Dragonfly#future-directions)
 
@@ -91,16 +91,16 @@ Details on the multiple linear regression model can be found [here](Trial%202/Mo
 ### Lasso and Ridge Regression
 After performing multiple linear regression, we decided to extend the model with both lasso and ridge regression. These models allow us to impose a penalty on the coefficients, which helps to elucidate which features are most important for the model. In theory, smaller coefficients chosen through optimization of the hyperparameter alpha should also help us avoid overfitting to the training data. Details for the lasso and ridge models can be found [here](Trial%202/Models/Lasso%20Ridge%20v1). 
 
-Lasso regression in particular can be very helpful for feature selection, since it tends to push the coefficients of less important features to zero as the hyperparameter alpha is increased. An example trial using lasso can be seen below (click the table to see a larger version if needed). We can see that as alpha increases, some coefficients such as those for organic, fair trade, and decaf quickly become zero, while others, such as medium-light roast and the africa/arabia region tend to stay around and stay larger in magnitude. We can conclude that the categories with coefficients that are larger and remain included in higher alphas are more important for determining the rating. Interestingly, it seems that organic and fair trade coffees are not rated more highly than non-organic and non-fair trade.
+Lasso regression in particular can be very helpful for feature selection, since it tends to push the coefficients of less important features to zero as the hyperparameter alpha is increased. A subset of the coefficients corresponding to the regions and how they change based on alpha can be seen below. The full table with all of the features can be found [here](Trial%202/Models/lasso_alphas.png). Looking at the full table, we can see that as alpha increases, some coefficients such as those for organic, fair trade, and decaf quickly become zero, while others, such as medium-light roast and the africa/arabia region tend to stay around and stay larger in magnitude. We can conclude that the categories with coefficients that are larger and remain included in higher alphas are more important for determining the rating. Interestingly, it seems that organic and fair trade coffees are not rated more highly than non-organic and non-fair trade.
 
-![Alpha table](Trial%202/Models/lasso_alphas.png)
+![Alpha table](Trial%202/Models/lasso_alphas_cropped.png)
 
 ### Interaction Terms
 We decided to include some interaction terms in our model to see if the predictions could be improved. Coefficients with a stronger main effect are more likely to have interactions. From our previous regression coefficients, we determined that roast was particularly important, as were espresso and pod/capsule. We decided to try including interaction terms between espresso and each roast as well as between pod/capsule and each roast. More details on the interaction terms can be found [here](Trial%202/Models/Interaction%20Terms.ipynb) and the results can be seen in the [Conclusions](https://github.com/madisonc27/Team-Dragonfly#conclusions).
 
-It is important to note that many other interaction terms could have been chosen. For example, some of the regions, such as Africa/Arabia, seemed to be quite important. However, adding in interaction terms greatly increases the number of features in the model. We saw only modest gains in model performance when adding the 12 roast with espresso and pod/capsule interaction terms discussed above, corresponding to a reduction in the MSE of approximately 0.13 and in the MAE of approximately 0.05. Therefore, we decided not to continue adding more interaction terms.
+It is important to note that many other interaction terms could have been chosen. For example, some of the regions, such as Africa/Arabia, seemed to be quite important based on the coefficients obtained from lasso. However, adding in interaction terms greatly increases the number of features in the model. We saw only modest gains in model performance when adding the 12 interaction terms combining roast with espresso and pod/capsule that were discussed above, corresponding to a reduction in the MSE of approximately 0.13 and in the MAE of approximately 0.05. Therefore, we decided not to continue adding more interaction terms.
 
-### Conclusions
+### Results
 A table summarizing the mean squared error (MSE), mean absolute error (MAE), and root mean squared error (RMSE) obtained from testing each cross-validated model on the test set can be found below. We can see that all models performed similarly, and did better than the baseline which simply assumed the mean from the training set. As expected, RMSE is larger than MAE for all models, which means that there is some variation in the magnitude of the errors and some very large errors likely occurred, which RMSE penalizes more due to the square. 
 
 ![Results](Trial%202/Models/testing_results.png)
