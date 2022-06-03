@@ -9,18 +9,18 @@ Coffee is consumed daily by 30-40% of the world's population, and produced in ov
 * [Ethan Semrad](https://math.fsu.edu/People/grads.php?id=1823) has a master's in Mathematics from University of South Dakota, and is currently pursuing a PhD in Biomathematics at Florida State University. He takes his coffee black.
 
 ## Table of Contents
-* [Trial 1: Categorize country of origin using professional coffee quality ratings](https://github.com/madisonc27/Team-Dragonfly/edit/main/README.md#trial-1-categorize-country-of-origin-using-professional-coffee-quality-ratings)
-  * [Data Cleaning and Exploratory Analysis](https://github.com/madisonc27/Team-Dragonfly/edit/main/README.md#data-cleaning-and-exploratory-analysis)
-  * [Model Creation and Conclusions](https://github.com/madisonc27/Team-Dragonfly/edit/main/README.md#model-creation-and-conclusions)
-* [Trial 2: Predict rating from Coffee Review using various features](https://github.com/madisonc27/Team-Dragonfly/edit/main/README.md#trial-2-predict-rating-from-coffee-review-using-various-features)
-  * [Data Cleaning and Exploratory Analysis](https://github.com/madisonc27/Team-Dragonfly/edit/main/README.md#data-cleaning-and-exploratory-analysis-1)
-  * [Model Creation and Results](https://github.com/madisonc27/Team-Dragonfly/edit/main/README.md#model-creation-and-results)
-    * [Multiple Linear Regression](https://github.com/madisonc27/Team-Dragonfly/edit/main/README.md#multiple-linear-regression)
-    * [Lasso and Ridge Regression](https://github.com/madisonc27/Team-Dragonfly/edit/main/README.md#lasso-and-ridge-regression)
-    * [Interaction Terms](https://github.com/madisonc27/Team-Dragonfly/edit/main/README.md#interaction-terms)
-    * [Conclusions](https://github.com/madisonc27/Team-Dragonfly/edit/main/README.md#conclusions)
-* [Key Takeaways](https://github.com/madisonc27/Team-Dragonfly/edit/main/README.md#key-takeaways)
-* [Future Directions](https://github.com/madisonc27/Team-Dragonfly/edit/main/README.md#future-directions)
+* [Trial 1: Categorize country of origin using professional coffee quality ratings](https://github.com/madisonc27/Team-Dragonfly#trial-1-categorize-country-of-origin-using-professional-coffee-quality-ratings))
+  * [Data Cleaning and Exploratory Analysis](https://github.com/madisonc27/Team-Dragonfly#data-cleaning-and-exploratory-analysis)
+  * [Model Creation and Conclusions](https://github.com/madisonc27/Team-Dragonfly#model-creation-and-conclusions)
+* [Trial 2: Predict rating from Coffee Review using various features](https://github.com/madisonc27/Team-Dragonfly#trial-2-predict-rating-from-coffee-review-using-various-features)
+  * [Data Cleaning and Exploratory Analysis](https://github.com/madisonc27/Team-Dragonfly#data-cleaning-and-exploratory-analysis-1)
+  * [Model Creation and Results](https://github.com/madisonc27/Team-Dragonfly#model-creation-and-results)
+    * [Multiple Linear Regression](https://github.com/madisonc27/Team-Dragonfly#multiple-linear-regression)
+    * [Lasso and Ridge Regression](https://github.com/madisonc27/Team-Dragonfly#lasso-and-ridge-regression)
+    * [Interaction Terms](https://github.com/madisonc27/Team-Dragonfly#interaction-terms)
+    * [Conclusions](https://github.com/madisonc27/Team-Dragonfly#conclusions)
+* [Key Takeaways](https://github.com/madisonc27/Team-Dragonfly#key-takeaways)
+* [Future Directions](https://github.com/madisonc27/Team-Dragonfly#future-directions)
 
 # Trial 1: Categorize country of origin using professional coffee quality ratings
 We decided to utilize a data set that was scraped from the [Coffee Quality Institute](https://www.coffeeinstitute.org/), which provides third-party coffee quality evaluation. Our goal was to use the professional rating values in each of 10 categories to see if we could predict the country of origin of the beans. We also decided to keep growing altitude and bean processing method as backup features for prediction if we were not able to accurately predict the country of origin. 
