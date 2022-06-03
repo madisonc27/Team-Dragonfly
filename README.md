@@ -1,41 +1,41 @@
-# coffee-quality-database
-Digitizing 1,340 coffee reviews
+# Team Dragonfly:  Title
+Include a brief summary of the project and our goals.
+Include links to slides and recorded presentation
 
-# Data
-These data contain reviews of 1312 arabica and 28 robusta coffee beans from the Coffee Quality Institute's trained reviewers. The features include:
+## Team Members
+Links to our Linkedins if we would like
 
-## Quality Measures
-* Aroma
-* Flavor
-* Aftertaste
-* Acidity
-* Body
-* Balance
-* Uniformity
-* Cup Cleanliness
-* Sweetness
-* Moisture
-* Defects
+## Table of Contents
+Include links to each header below
 
-## Bean Metadata
-* Processing Method
-* Color
-* Species (arabica / robusta)
+# Trial 1: Categorize country of origin using professional coffee quality ratings
+We decided to utilize a data set that was scraped from the [Coffee Quality Institute](https://www.coffeeinstitute.org/), which provides third-party coffee quality evaluation. Our goal was to use the professional rating values in each of 10 categories to see if we could predict the country of origin of the beans. We also decided to keep growing altitude and bean processing method as backup features for prediction if we were not able to accurately predict the country of origin. 
 
-## Farm Metadata
-*  Owner
-* Country of Origin
-* Farm Name
-* Lot Number
-* Mill
-* Company
-* Altitude
-* Region
+## Data Cleaning and Exploratory Analysis
+We began by removing the columns that were not of interest to us and any entries that were missing review scores or information on the country of origin. We decided to set a cutoff for the minimum number of entries for a country to be included in the analysis. Initially we set the cutoff to 10, but also created a data set with a cutoff of 50 to hopefully improve the predicting power of the data. We also created a data set that grouped the countries into larger regions, again thinking it might allow for better predictions. More details can be found in the [Data Cleaning Folder](Trial%201/Data%20Cleaning).
 
-The [data](https://github.com/jldbc/coffee-quality-database/tree/master/data) folder contains both raw and cleaned data. The raw data is exactly as it was found on the CQI site. Since these human-recorded data use a variety of different encodings, abbreviations, and units of measurement for their farm names, altitude, region, and other fields, I recommend using the cleaned data as a starting point.
+After cleaning, we could explore the data more deeply. A pairplot exploring the relationships between the variables can be found [here](Trial%201/EDA/EDA.ipynb). From this image, it is clear that there is a large positive correlation between the features. However, there seemed to be some separation between some of the countries, particularly between Mexico and Colombia, so we were hopeful that our models could pick up on these differences.
 
-The site was scraped using a Selenium headless browser and Beautiful Soup. To replicate this or collect updated data, create a login for the CQI site and enter your credentials in the [scraper](https://github.com/jldbc/coffee-quality-database/tree/master/scraper) 
+## Model Creation and Conclusions
+Mention each model and note that we were not able to obtain high accuracy. Note the problems with the data and that we decided to shift focus.
 
-# Source
+Unfortunately, we found that the models were not very accurate for predicting the country of origin. We briefly tested altitude and processing method, but ran into the same issues where the features were too highly correlated and did not cluster by the variable of interest.
 
-These data were collected from the Coffee Quality Institute's [review pages](https://database.coffeeinstitute.org/) in January 2018. 
+# Trial 2: Predict rating from Coffee Review using various features
+Brief description of data set and goals
+
+## Data Cleaning and Exploratory Analysis
+Describe how we treated the data and include important graphics
+
+## Model Creation and Results
+
+### Multiple Linear Regression
+
+### Lasso and Ridge Regression
+Include rationale for using lasso and ridge - they both work well for smaller data sets
+
+### Interaction Terms
+
+### Conclusions
+
+# Future Directions
