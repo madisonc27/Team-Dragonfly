@@ -108,7 +108,11 @@ A table summarizing the mean squared error (MSE), mean absolute error (MAE), and
 # Key Takeaways
 Our data may be of interest to coffee importers or sellers, who may wish to know which features are associated with higher consumer ratings. In our results, the features that had the largest positive coefficients were medium-light roast and to a lesser extent light roast. On the other hand, darker roasts had negative coefficients and tended to be rated lower by consumers. Coffees from the Africa/Arabia region also tended to rate higher, while Caribbean coffees rated slightly lower.
 
-Perhaps equally important may be the attributes that did not seem to be associated with any change in rating. These features included organic, fair trade, decaffeination, and blends. Organic and fair trade may be surprising, because these are often thought of as "higher end" features and likely are more expensive. However, organic had a very slight negative coefficient, and fair trade had a very slight positive coefficient.
+Perhaps equally important may be the attributes that did not seem to be associated with any change in rating. These features included organic, fair trade, decaffeination, and blends. Organic and fair trade may be surprising, because these are often thought of as "higher end" features and likely are more expensive. However, organic had a very slight negative coefficient, and fair trade had a very slight positive coefficient before being taken to zero in the lasso regression.
+
+The coefficients obtained from lasso with an alpha of 0.1 can be seen in the table below.
+
+![Lasso coefficients](Trial%202/Models/lasso_coef_table.png)
 
 # Future Directions
-
+In the future it would be interesting to incorporate price data into our models. The data set we used had price data, but the formatting and units were inconsistent and the column contained many null values, so we chose not to include it in our analyses. If this data could be cleaned and scaled appropriately, it might provide further actionable insights for companies involved in providing and selling coffee.
