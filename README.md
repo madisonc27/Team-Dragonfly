@@ -5,7 +5,7 @@ Include links to slides and recorded presentation
 ## Team Members
 Links to our Linkedins if we would like
 
-## Table of Contents
+## Table of Contents - could also remove because one is built in
 Include links to each header below
 
 # Trial 1: Categorize country of origin using professional coffee quality ratings
@@ -17,9 +17,14 @@ We began by removing the columns that were not of interest to us and any entries
 After cleaning, we could explore the data more deeply. A pairplot exploring the relationships between the variables can be found [here](Trial%201/EDA/EDA.ipynb). From this image, it is clear that there is a large positive correlation between the features. However, there seemed to be some separation between some of the countries, particularly between Mexico and Colombia, so we were hopeful that our models could pick up on these differences.
 
 ## Model Creation and Conclusions
-Mention each model and note that we were not able to obtain high accuracy. Note the problems with the data and that we decided to shift focus.
+We used supervised learning to create five different preliminary models, including [K Nearest Neighbors](Trial%201/Models/K%20Nearest%20Neighbors.ipynb), [Decision Tree](Trial%201/Models/Decision%20Tree.ipynb), [Random Forest](Trial%201/Models/Random%20Forest.ipynb), [AdaBoost](Trial%201/Models/AdaBoost.ipynb), and [Support Vector Machines](Trial%201/Models/SVC.ipynb), where additional details on each model can be found in its respective notebook. We used accuracy as a base metric to compare the models. Unfortunately, we found that these models were not very accurate for predicting the country of origin, with most achieving accuracies in the 30-35% range.
 
-Unfortunately, we found that the models were not very accurate for predicting the country of origin. We briefly tested altitude and processing method, but ran into the same issues where the features were too highly correlated and did not cluster by the variable of interest.
+Upon further reflection, the low accuracy found in our models was not altogether surprising. Our data had a few issues, chiefly a very high positive correlation between the predictors and very small if any differences in the mean and variance of the predictors between countries, as well as a lack of adequate sample size for many of the countries. Our models tended to place the samples into the two or three categories with the highest number of samples, which can be seen in the example confusion matrix below resulting from the K nearest neighbors algorithm.
+![Confusion Matrix](Trial%201/Models/confusion_matrix.png)
+
+Because it seemed we would not be able to accurately categorize by country of origin based on the issues mentioned above, we hoped to try categorizing by growth altitude or processing method instead. However, the features still did not appear to have a clear relationship to these variables when investigating exploratory plots.
+
+Based on our results, we can conclude that the Coffee Quality Institute ratings do not differ significantly between different countries, growth altitudes, or processing methods. However, we still wanted to practice modeling and hoped to find some features that might affect the rating, so we set off in search of a new data set.
 
 # Trial 2: Predict rating from Coffee Review using various features
 Brief description of data set and goals
