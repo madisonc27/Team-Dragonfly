@@ -4,9 +4,9 @@ Coffee is consumed daily by 30-40% of the world's population, and produced in ov
 ***Include link to slides and recorded presentation***
 
 ## Team Members
-[Cassidy Madison](https://www.linkedin.com/in/cassidymadison/) has a master's in Biology from Harvard University. Surprisingly, she doesn't particularly enjoy coffee.
-[Ching-Lung Hsu](https://www.linkedin.com/in/ching-lung-hsu-b5611b139/) is pursuing a PhD studying Bayesian Nonparametrics at Duke University. He likes light roast coffee.
-[Ethan Semrad](https://math.fsu.edu/People/grads.php?id=1823) has a master's in Mathematics from University of South Dakota, and is currently pursuing a PhD in Biomathematics at Florida State University. He takes his coffee black.
+* [Cassidy Madison](https://www.linkedin.com/in/cassidymadison/) has a master's in Biology from Harvard University. Surprisingly, she doesn't particularly enjoy coffee.
+* [Ching-Lung Hsu](https://www.linkedin.com/in/ching-lung-hsu-b5611b139/) is pursuing a PhD studying Bayesian Nonparametrics at Duke University. He likes light roast coffee.
+* [Ethan Semrad](https://math.fsu.edu/People/grads.php?id=1823) has a master's in Mathematics from University of South Dakota, and is currently pursuing a PhD in Biomathematics at Florida State University. He takes his coffee black.
 
 ## Table of Contents
 * [Trial 1: Categorize country of origin using professional coffee quality ratings](https://github.com/madisonc27/Team-Dragonfly/edit/main/README.md#trial-1-categorize-country-of-origin-using-professional-coffee-quality-ratings)
