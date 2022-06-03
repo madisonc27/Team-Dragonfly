@@ -116,3 +116,5 @@ The coefficients obtained from lasso with an alpha of 0.1 can be seen in the tab
 
 # Future Directions
 In the future it would be interesting to incorporate price data into our models. The data set we used had price data, but the formatting and units were inconsistent and the column contained many null values, so we chose not to include it in our analyses. If this data could be cleaned and scaled appropriately, it might provide further actionable insights for companies involved in providing and selling coffee.
+
+It would also be interesting to consider descriptor analysis from the review data set. The scraped review data included flavor descriptors that we chose not to include due to time constraints. With proper cleaning, natural language processing could be used on the data to find relationships between specific descriptors and ratings.
