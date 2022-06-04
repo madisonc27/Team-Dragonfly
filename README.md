@@ -1,4 +1,4 @@
-# Team Dragonfly:  Coffee Ratings
+# Team Dragonfly:  One-Hot Coffee
 Coffee is consumed daily by 30-40% of the world's population, and produced in over 70 countries worldwide. Though coffee drinkers have their own individual preferences, we wanted to see if we could find relationships between how a coffee rates in taste tests and its features, such as country or region of origin, roast, or type of preparation method.
 
 This project was completed as part of The Erdős Institute's [data science bootcamp](https://www.erdosinstitute.org/code).
