@@ -3,7 +3,7 @@ Coffee is consumed daily by 30-40% of the world's population, and produced in ov
 
 This project was completed as part of The Erdős Institute's [data science bootcamp](https://www.erdosinstitute.org/code).
 
-***Include link to slides and recorded presentation***
+[Powerpoint Presentation](TeamDragonfly_Rating_Coffee.pdf)
 
 ## Team Members
 * [Ching-Lung Hsu](https://www.linkedin.com/in/ching-lung-hsu-b5611b139/) is pursuing a PhD studying Bayesian Nonparametrics at Duke University. He likes light roast coffee.
